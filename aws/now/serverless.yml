@@ -1,0 +1,19 @@
+# For full config options, check the docs:
+#    docs.serverless.com
+
+service: now
+
+provider:
+  name: aws
+  region: eu-west-1
+  runtime: nodejs12.x
+  memorySize: 128
+
+functions:
+  now:
+    handler: handler.now
+    events:
+      - http:
+          path: test/now
+          method: get
+

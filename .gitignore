@@ -1,0 +1,5 @@
+# for notes on Cloud providers credentials
+/credentials*
+
+# for serverless tmp files
+.serverless/
