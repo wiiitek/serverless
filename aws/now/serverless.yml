@@ -5,8 +5,9 @@ service: now
 
 provider:
   name: aws
+  # Ireland
   region: eu-west-1
-  runtime: nodejs12.x
+  runtime: nodejs14.x
   memorySize: 128
 
 functions:
