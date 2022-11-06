@@ -10,7 +10,10 @@ To install NodeJS use [nvm] ([nvm-windows]).
 ### AWS account
 
 Prepare AWS user to create and deploy your services.
-You can use [this gist](https://gist.github.com/ServerlessBot/7618156b8671840a539f405dea2704c8) to create a policy for that user.
+You can use [this gist](https://gist.github.com/ServerlessBot/7618156b8671840a539f405dea2704c8) to create a policy for that user. Additional permissions might be needed:
+
+- `cloudformation:DeleteChangeSet`
+- `logs:TagLogGroup`
 
 Configure serverless to work with [AWS profiles].
 You can [set default profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html#using-profiles) with:

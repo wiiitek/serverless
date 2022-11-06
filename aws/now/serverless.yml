@@ -2,6 +2,7 @@
 #    docs.serverless.com
 
 service: now
+frameworkVersion: "3"
 
 provider:
   name: aws
@@ -17,4 +18,3 @@ functions:
       - http:
           path: test/now
           method: get
-

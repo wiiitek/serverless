@@ -1,18 +1,14 @@
-'use strict';
+"use strict";
 
-module.exports.now = async event => {
-
+module.exports.now = async (event) => {
   var now = new Date();
+  const content = {
+    now: now.toISOString(),
+  };
+  const indent = 2;
 
   return {
     statusCode: 200,
-    body: JSON.stringify(
-      {
-        now: now.toISOString(),
-      },
-      null,
-      2
-    ),
+    body: JSON.stringify(content, null, indent),
   };
 };
-
